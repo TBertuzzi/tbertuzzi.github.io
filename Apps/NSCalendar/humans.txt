@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Bruce Santos - @brucesantos - bruce.santos@gmail.com
+
+# THANKS
+
+    my mom and dad
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, ES6
+    Apache Server Configs, jQuery, Modernizr, Normalize.css

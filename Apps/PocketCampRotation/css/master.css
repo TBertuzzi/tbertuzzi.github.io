@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+/* ---- variables and mixins ---- */
+/* ---- resets ---- */
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  color: white;
+  font-family: 'Ubuntu', sans-serif; }
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(233.74deg, #8F6B28 -2.11%, #A0C7BF 97.99%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  overflow: hidden; }
+
+.content {
+  position: relative;
+  z-index: 2;
+  padding: 5vh 8% 2em;
+  display: flex;
+  flex-wrap: wrap; }
+  @media (min-width: 800px) {
+    .content {
+      padding: 8vh 12% 2em; } }
+  @media (min-width: 1100px) {
+    .content {
+      padding: 12vh 18% 2em; } }
+  .content .metade {
+    width: 100%; }
+    @media (min-width: 800px) {
+      .content .metade {
+        width: 50%; } }
+  .content img.logo {
+    height: 4em;
+    display: block;
+    margin: 3em auto; }
+    @media (min-width: 800px) {
+      .content img.logo {
+        margin: 3em 0; } }
+    @media (min-width: 1100px) {
+      .content img.logo {
+        height: 5em; } }
+    @media (min-width: 1400px) {
+      .content img.logo {
+        height: 7em; } }
+  .content p.descricao {
+    margin-bottom: 3em;
+    line-height: 1.5;
+    text-align: center; }
+    @media (min-width: 800px) {
+      .content p.descricao {
+        text-align: left; } }
+    @media (min-width: 1400px) {
+      .content p.descricao {
+        font-size: 1.3em; } }
+  .content div.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    @media (min-width: 800px) {
+      .content div.buttons {
+        justify-content: flex-start; } }
+    .content div.buttons a {
+      text-decoration: none;
+      padding: .8em 1em;
+      border: 2px solid white;
+      border-radius: 4px;
+      color: white;
+      margin: .5em;
+      line-height: 1.5;
+      font-weight: 700;
+      transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); }
+      @media (min-width: 1400px) {
+        .content div.buttons a {
+          font-size: 1.1em; } }
+      .content div.buttons a #ios, .content div.buttons a #android {
+        fill: white;
+        transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); }
+      .content div.buttons a:hover {
+        background-color: white;
+        color: #555;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+        .content div.buttons a:hover #ios, .content div.buttons a:hover #android {
+          fill: #555; }
+      .content div.buttons a svg {
+        display: inline-block;
+        position: relative;
+        top: .1em;
+        margin-right: .5em; }
+      .content div.buttons a span {
+        line-height: .9;
+        vertical-align: text-top; }
+  .content div.qr-codes {
+    display: flex;
+    justify-content: center; }
+    .content div.qr-codes img {
+      width: 50%;
+      max-width: 100px; }
+  .content div.direita {
+    display: flex;
+    justify-content: center; }
+  .content img#mobile {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    min-width: 320px;
+    margin-top: 2em; }
+    @media (min-width: 800px) {
+      .content img#mobile {
+        margin-top: 0; } }
+
+.modal {
+  position: absolute;
+  display: none;
+  z-index: 2;
+  width: 80vw;
+  height: 80vh;
+  top: 10vh;
+  left: 10vw;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+  .modal .modal-header {
+    width: 100%;
+    padding: 1.5em;
+    text-align: right; }
+    .modal .modal-header img {
+      opacity: .5;
+      cursor: pointer; }
+  .modal .modal-body {
+    padding: 1.5em;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .modal .modal-body p {
+      margin: .5em; }
+    .modal .modal-body h4 {
+      margin: .5em; }
